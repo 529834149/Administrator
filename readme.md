@@ -1,7 +1,7 @@
 ## 知识点
 ------------
 `多个国家语言包实现` composer require caouecs/laravel-lang:~3.0
-+ [github地址：](https://github.com/529834149/Laravel-lang-1)
++ [github地址：https://github.com/529834149/Laravel-lang-1](https://github.com/529834149/Laravel-lang-1)
 ------------------------------------------------------------------------------  
 ## 安装步骤
 ------------
