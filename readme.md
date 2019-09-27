@@ -4,30 +4,14 @@
 + [github地址：https://github.com/529834149/Laravel-lang-1](https://github.com/529834149/Laravel-lang-1)
 `2、中英文多种语言包切换` composer require laravel-admin-extensions/multi-language
 + [github地址：https://github.com/529834149/multi-language](https://github.com/529834149/multi-language)
+
+
 ------------------------------------------------------------------------------  
-## 安装步骤
+## artisan 快捷方式
 ------------
-`laravel-admin` based on following plugins or services:
+`1、创建当前后台控制器`  
++ [创建控制器](php artisan admin:make CategoriesController --model=App\\Admin\\Models\\Categories)
 
-+ [Laravel](https://laravel.com/)
-+ [AdminLTE](https://adminlte.io/)
-+ [Datetimepicker](http://eonasdan.github.io/bootstrap-datetimepicker/)
-+ [font-awesome](http://fontawesome.io)
-+ [moment](http://momentjs.com/)
-+ [Google map](https://www.google.com/maps)
-+ [Tencent map](http://lbs.qq.com/)
-+ [bootstrap-fileinput](https://github.com/kartik-v/bootstrap-fileinput)
-+ [jquery-pjax](https://github.com/defunkt/jquery-pjax)
-+ [Nestable](http://dbushell.github.io/Nestable/)
-+ [toastr](http://codeseven.github.io/toastr/)
-+ [X-editable](http://github.com/vitalets/x-editable)
-+ [bootstrap-number-input](https://github.com/wpic/bootstrap-number-input)
-+ [fontawesome-iconpicker](https://github.com/itsjavi/fontawesome-iconpicker)
-+ [sweetalert2](https://github.com/sweetalert2/sweetalert2)
-
-License
-------------
-`laravel-admin` is licensed under [The MIT License (MIT)](LICENSE).
 ## 常见问题
 ------------
 `在开发管理后台的时候会经常遇到很常见的问题，在这里把我遇见过的小问题全部列入进来包括解决方案` 
