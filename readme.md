@@ -2,6 +2,7 @@
 ------------
 `1、多个国家语言包实现` composer require caouecs/laravel-lang:~3.0
 + [github地址：https://github.com/529834149/Laravel-lang-1](https://github.com/529834149/Laravel-lang-1)
+
 `2、中英文多种语言包切换` composer require laravel-admin-extensions/multi-language
 + [github地址：https://github.com/529834149/multi-language](https://github.com/529834149/multi-language)
 
