@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>Laravel</b> admin',
+    'logo' => '<b>内容管理</b> 系统',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>内容</b>',
 
     /*
     |--------------------------------------------------------------------------
@@ -138,6 +138,8 @@ return [
         'excepts' => [
             'auth/login',
             'auth/logout',
+             // add this line !
+            'locale',
         ],
     ],
 
@@ -395,6 +397,16 @@ return [
     |
     */
     'extensions' => [
-
+        'multi-language' => [
+            'enable' => true,
+            // the key should be same as var locale in config/app.php
+            // the value is used to show
+            'languages' => [
+                'en' => 'English',
+                'zh-CN' => '简体中文',
+            ],
+            // default 石locale
+            'default' => 'zh-CN',
+        ],
     ],
 ];
