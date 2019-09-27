@@ -18,7 +18,7 @@ class CategoriesController extends AdminController
     public function index(Content $content)
     {
         return Admin::content(function (Content $content) {
-            $content->header('栏目列表');
+            $content->header( __('栏目管理'));
             $content->body(Categories::tree());
         });
     }
@@ -27,6 +27,8 @@ class CategoriesController extends AdminController
      *
      * @var string
      */
+  
+
     protected $title = '栏目管理';
 
     /**
@@ -77,10 +79,11 @@ class CategoriesController extends AdminController
     {
         $form = new Form(new Categories);
 
-        $form->number('parent_id', __('Parent id'));
-        $form->number('order', __('Order'));
-        $form->text('title', __('Title'));
-
+        $form->display('id', 'ID');
+        $form->select('parent_id', __('categories.parent_id'))->options(Categories::selectOptions());
+        $form->text('title', __('categories.title'))->rules('required');
+        $form->display('created_at', '创建时间');
+        $form->display('updated_at', '修改时间');
         return $form;
     }
 }
